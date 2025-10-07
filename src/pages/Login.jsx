@@ -15,7 +15,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://analysis-backend-1-6iqo.onrender.com",
+        "http://localhost:4000/api/auth/login",
         { email, password },
         { withCredentials: true }
       );
